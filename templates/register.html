@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-box register-box">
+
+            <h1>
+                Create Account
+            </h1>
+
+            <p>
+                Start your virtual learning journey today
+            </p>
+
+            <form
+                action="{{ url_for('register') }}"
+                method="POST"
+            >
+
+                <div class="input-row">
+
+                    <div class="input-group">
+
+                        <label>
+                            First Name
+                        </label>
+
+                        <input
+                            type="text"
+                            name="first_name"
+                            placeholder="First name"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>
+                            Last Name
+                        </label>
+
+                        <input
+                            type="text"
+                            name="last_name"
+                            placeholder="Last name"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Create password"
+                        required
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        name="confirm_password"
+                        placeholder="Confirm password"
+                        required
+                    >
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="auth-btn"
+                >
+                    Register
+                </button>
+
+            </form>
+
+            <div class="auth-link">
+
+                Already have an account?
+
+                <a href="{{ url_for('login') }}">
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

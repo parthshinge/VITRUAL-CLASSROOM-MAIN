@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Classroom</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Virtual Classroom
+        </div>
+
+        <div class="nav-links">
+
+            <a href="{{ url_for('home') }}">
+                Home
+            </a>
+
+            <a href="{{ url_for('content') }}">
+                Courses
+            </a>
+
+            <a href="{{ url_for('login') }}">
+                Login
+            </a>
+
+            <a href="{{ url_for('register') }}">
+                Register
+            </a>
+
+        </div>
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Upgrade Your Learning Experience
+            </h1>
+
+            <p>
+                Join our modern virtual classroom platform and explore industry-ready courses.
+            </p>
+
+            <a
+                href="{{ url_for('register') }}"
+                class="hero-btn"
+            >
+                Get Started
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="features-section">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🎥
+            </div>
+
+            <h2>
+                Live Learning
+            </h2>
+
+            <p>
+                Attend interactive sessions with modern learning resources.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                📚
+            </div>
+
+            <h2>
+                Premium Content
+            </h2>
+
+            <p>
+                Access high-quality notes, PDFs and recorded sessions.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🌐
+            </div>
+
+            <h2>
+                Community Support
+            </h2>
+
+            <p>
+                Collaborate and learn together with other students.
+            </p>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
