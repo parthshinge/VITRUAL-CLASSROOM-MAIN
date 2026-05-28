@@ -102,4 +102,79 @@ This project showcases how web applications can be effectively deployed and scal
 ## 🔗 Demo and Source Code
 
 - 🎥 [Demo Video](https://drive.google.com/file/d/1LB_YXHSry8S5PD3ijs0IP8p0HA5zYZA6/view?usp=drive_link)  
-- 🧾 [GitHub Repository](https://github.com/RohanAnekar/AWS-hosted-Virtual-Classroom-and-Learning-Platform.git)
+- 🧾 [GitHub Repository](https://github.com/parthshinge/VITRUAL-CLASSROOM-MAIN.git)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.7 or higher
+- AWS Account with access to EC2, S3, and RDS
+- Git
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/parthshinge/VITRUAL-CLASSROOM-MAIN.git
+   cd VITRUAL-CLASSROOM-MAIN
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Configure AWS credentials:**
+   - Set up your AWS credentials in `~/.aws/credentials` or as environment variables
+   - Update the AWS configuration in `app.py` with your specific S3 bucket, RDS endpoint, and credentials
+
+4. **Run the application:**
+   ```bash
+   python app.py
+   ```
+
+5. **Access the application:**
+   - Open your browser and navigate to `http://localhost:5000`
+
+### AWS Setup Guide
+
+1. **Create S3 Bucket:**
+   - Go to AWS S3 console
+   - Create a new bucket for storing course content
+   - Configure bucket policy for public read access if needed
+
+2. **Create RDS MySQL Instance:**
+   - Go to AWS RDS console
+   - Create a MySQL database instance
+   - Note the endpoint, username, and password
+   - Create the required database schema
+
+3. **Launch EC2 Instance:**
+   - Go to AWS EC2 console
+   - Launch an instance (Ubuntu/Amazon Linux recommended)
+   - Configure security groups to allow HTTP (port 80) and SSH (port 22)
+   - SSH into the instance and deploy the application
+
+---
+
+## 📝 Configuration
+
+Update the following in `app.py`:
+- S3 bucket name
+- RDS database credentials
+- AWS region
+- Flask secret key
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+
+## 📄 License
+
+This project is open source and available for educational purposes.
