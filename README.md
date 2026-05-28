@@ -101,7 +101,7 @@ This project showcases how web applications can be effectively deployed and scal
 
 ## 🔗 Demo and Source Code
 
-- 🎥 [Demo Video](https://drive.google.com/file/d/1LB_YXHSry8S5PD3ijs0IP8p0HA5zYZA6/view?usp=drive_link)  
+- 🎥 [Demo Video](https://drive.google.com/file/d/1gSTEKSIoo5ZNXecc92klWXmDLnAbb81t/view?usp=drive_link)  
 - 🧾 [GitHub Repository](https://github.com/parthshinge/VITRUAL-CLASSROOM-MAIN.git)
 
 ---
